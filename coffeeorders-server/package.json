@@ -1,0 +1,26 @@
+{
+  "name": "coffeeorders",
+  "version": "1.0.0",
+  "description": "For the Big Nerd Ranch book chapter 13 coffee orders API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch . index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "diskdb": "^0.1.17",
+    "express": "^4.17.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*",
+      "backup/*"
+    ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

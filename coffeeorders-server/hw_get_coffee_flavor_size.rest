@@ -1,0 +1,82 @@
+// install the "REST Client" extension in VSCode.
+@baseUrl=localhost:3000
+
+# COFFEE TYPES
+
+###
+
+# get triple espresso orders
+GET http://{{baseUrl}}/coffeeorders/coffee/triple%20espresso HTTP/1.1
+
+###
+
+# get espresso orders
+GET http://{{baseUrl}}/coffeeorders/coffee/americano HTTP/1.1
+
+###
+
+# get earl grey orders
+GET http://{{baseUrl}}/coffeeorders/coffee/earl%20grey HTTP/1.1
+
+###
+
+# FLAVOR ORDERS
+
+###
+
+# get flavor None
+GET http://{{baseUrl}}/coffeeorders/flavor/None HTTP/1.1
+
+###
+
+# get flavor Mocha
+GET http://{{baseUrl}}/coffeeorders/flavor/Mocha HTTP/1.1
+
+###
+
+# get flavor Pumpkin Spice
+GET http://{{baseUrl}}/coffeeorders/flavor/Pumpkin%20Spice HTTP/1.1
+
+###
+
+# get flavor Caramel
+GET http://{{baseUrl}}/coffeeorders/flavor/caramel HTTP/1.1
+
+###
+
+# STRENGTH ORDERS
+
+###
+
+# get strengts == 80
+GET http://{{baseUrl}}/coffeeorders/strength/80 HTTP/1.1
+
+###
+
+# get strengts == 60
+GET http://{{baseUrl}}/coffeeorders/strength/60 HTTP/1.1
+
+###
+
+# get strengts == 100
+GET http://{{baseUrl}}/coffeeorders/strength/100 HTTP/1.1
+
+# STRENGTH ORDERS
+
+###
+
+# get grande sizes
+GET http://{{baseUrl}}/coffeeorders/size/grande HTTP/1.1
+
+###
+
+# get tall sizes
+GET http://{{baseUrl}}/coffeeorders/size/tall HTTP/1.1
+
+###
+
+# get short sizes
+GET http://{{baseUrl}}/coffeeorders/size/short HTTP/1.1
+
+###
+

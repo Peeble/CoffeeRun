@@ -5,7 +5,6 @@
 
   class FormHandler {
     constructor (selector) {
-      // Code will go here
       if (!selector) {
         throw new Error('No selector provided')
       }
@@ -28,14 +27,20 @@
         })
         console.log(data)
         fn(data)
-        /*
-        var name = 'Thank you for your order';
+      })
+    }
 
-        var $p = $('<p></p>')
-
-        $p.append(name)
-
-        $('#ex1').modal().append($p) */
+    addInputHandler(fn) {
+      console.log('Setting input handler for form');
+      this.$formElement.on('input', '[name="emailAddress"]', function (event) {
+        var emailAddress = event.target.value;
+        var message = '';
+        if (fn(emailAddress)) {
+          event.target.setCustomValidity('');
+        } else {
+          message = emailAddress + ' is not an authorized email address!'
+          event.target.setCustomValidity(message);
+        }
       })
     }
   }
