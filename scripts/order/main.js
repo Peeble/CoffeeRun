@@ -9,7 +9,8 @@
   var RemoteDataStore = App.RemoteDataStore;
   var FormHandler = App.FormHandler
   var Validation = App.Validation;
-  var SERVER_URL = 'http://localhost:3000/coffeeorders';
+  //var SERVER_URL = 'http://localhost:3000/coffeeorders';
+  var SERVER_URL = 'https://co.audstanley.com/coffeeorders';
   var remoteDS = new RemoteDataStore(SERVER_URL);
   var CheckList = App.CheckList
   var myTruck = new Truck('ncc-1701', remoteDS)
@@ -21,8 +22,10 @@
   formHandler.addSubmitHandler(function (data) {
     myTruck.createOrder.call(myTruck, data)
     checkList.addRow.call(checkList, data)
+    console.log('new row?')
   })
 
   formHandler.addInputHandler(Validation.isCompanyEmail);
   console.log(formHandler)
+
 })(window)

@@ -17,6 +17,7 @@ rap/3.3.6/css/bootstrap.min.css">
 <body class="container">
   <header>
     <h1>CofeeRun</h1>
+    <h1 id="testHeader"></h1>
   </header>
 
   <section>
@@ -69,7 +70,7 @@ rap/3.3.6/css/bootstrap.min.css">
             <label for="strengthLevel">Caffeine Rating</label>
             <input name="strength" id="strengthLevel" type="range" value="30">
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+          <button id="submitButton" type="submit" class="btn btn-default">Submit</button>
           <button type="reset" class="btn btn-default">Reset</button>
         </form>
       </div>
@@ -82,8 +83,21 @@ rap/3.3.6/css/bootstrap.min.css">
       </div>
     </div>
   </section>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="scripts/app.js" charset="utf-8"></script>
   <script src="scripts/validation.js" charset="utf-8"></script>
   <script src="scripts/order/formhandler.js" charset="utf-8"></script>
   <script src="scripts/remotedatastore.js" charset="utf-8"></script>
