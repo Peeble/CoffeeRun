@@ -86,7 +86,8 @@
       })
     }
 /*
-    add (key, val) { this.ajaxposthelper('POST', this.serverURL, val) }
+    add (key, val) { //insert firebase stuff here
+      this.ajaxposthelper('POST', this.serverURL, val) }
     get (key, cb) { this.ajaxhelper('GET', this.serverURL + '/' + key, cb) }
     getAll (cb) { this.ajaxhelper('GET', this.serverURL, cb) }
     */
